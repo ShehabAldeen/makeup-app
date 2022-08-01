@@ -37,8 +37,8 @@ class ProductTile extends StatelessWidget {
                         backgroundColor: Colors.white,
                         child: IconButton(
                           icon: product.isFavorite.value
-                              ? Icon(Icons.favorite_rounded)
-                              : Icon(Icons.favorite_border),
+                              ? const Icon(Icons.favorite_rounded)
+                              : const Icon(Icons.favorite_border),
                           onPressed: () {
                             product.isFavorite.toggle();
                           },

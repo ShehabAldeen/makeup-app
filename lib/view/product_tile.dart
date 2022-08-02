@@ -47,15 +47,14 @@ class ProductTile extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               product.name,
               maxLines: 2,
-              style:
-              TextStyle(fontWeight: FontWeight.w800),
+              style: const TextStyle(fontWeight: FontWeight.w800),
               overflow: TextOverflow.ellipsis,
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             if (product.rating != null)
               Container(
                 decoration: BoxDecoration(
@@ -68,9 +67,9 @@ class ProductTile extends StatelessWidget {
                   children: [
                     Text(
                       product.rating.toString(),
-                      style: TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Colors.white),
                     ),
-                    Icon(
+                    const Icon(
                       Icons.star,
                       size: 16,
                       color: Colors.white,
@@ -78,9 +77,9 @@ class ProductTile extends StatelessWidget {
                   ],
                 ),
               ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text('\$${product.price}',
-                style: TextStyle(fontSize: 32, fontFamily: 'avenir')),
+                style: const TextStyle(fontSize: 32, fontFamily: 'avenir')),
           ],
         ),
       ),
